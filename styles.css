@@ -1,94 +1,124 @@
-
-
 :root {
-    --Pale-blue: hsl(225, 12%, 94%);
-    --Bright-blue: hsl(245, 75%, 52%);
-    --Very-pale-blue: hsl(225, 100%, 98%);
-    --Desaturated-blue: hsl(224, 23%, 55%);
-    --Dark-blue: hsl(223, 47%, 23%);
-  }
+  --Pale-blue: hsl(225, 12%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
 
-  button {
-    all: unset;
-  }
+button {
+  all: unset;
+}
 
-  body p{
-    font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
-  }
-
+body p {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
 
 /* Mobile version of the task*/
 
 .wrapper {
-    background-color: #E0E8FF;
+  background-color: #e0e8ff;
+  height: 100vh;
+  display: flex;
 }
 
 .main-container {
-    background-color: white;
+  background-color: white;
+  margin: auto;
+  width: 327px;
+  align-items: center;
+  border-radius: 20px;
 }
 
-.main-container img{
-    width: 327px;
-    border-radius: 20px 20px 0px 0px;
+.main-container img {
+  width: 327px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .img-container {
-    align-items: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-paragraph {
-    margin: 0px 32px;
+  margin: 0px 32px;
 }
 
 .hero-paragraph h2 {
-font-weight: 900;
-font-size: 22px;
-text-align: center;
+  font-weight: 900;
+  font-size: 22px;
+  text-align: center;
 }
 
 .hero-paragraph p {
-    font-weight: 900;
-    font-size: 22px;
-    font-weight: 500;
-    text-align: center;
+  font-weight: 500;
+  text-align: center;
+  line-height: 25px;
+  color: var(--Desaturated-blue);
 }
 
 .anual-plan-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 24px;
+  background-color: #f7f9ff;
+  border-radius: 11px;
 }
 
-.song-icon img{
-    width: 48px;
-    margin-left: 16px;
+.song-icon img {
+  width: 48px;
+  margin-left: 16px;
 }
 
 .annual-plan-cost {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
-.annual-plan-cost strong{
-    color: var(--Dark-blue)
+.annual-plan-cost strong {
+  color: var(--Dark-blue);
 }
 
-.annual-plan-cost span{
-    color:var(--Desaturated-blue)
+.annual-plan-cost span {
+  color: var(--Desaturated-blue);
 }
 
-.change-button{
-    color: var(--Bright-blue);
-    text-decoration: underline;
-    margin-right: 16px;
-    font-weight: 700;
+.change-button {
+  color: var(--Bright-blue);
+  text-decoration: underline;
+  margin-right: 16px;
+  font-weight: 700;
 }
 
+.payment-button {
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 11px;
+  background-color: var(--Bright-blue);
+  margin: 24px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+}
 
-.payment-button{
+.payment-button button {
+  color: #ffffff;
+}
 
+.cancel-order-button {
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--Desaturated-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
 }
